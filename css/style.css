@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+.logo{
+    display:block;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 20px;
+    box-shadow: inset 3px 3px 3px blue;
+    margin: auto;
+}
+.title{
+    display: block;
+    margin: 15px auto;
+    align-items: center;
+    width: 18rem;
+    font-size: 22px;
+    font-family: 'Pacifico';
+    font-weight: bold;
+}
+body{
+    background-color: #81aef7;
+    height: 100vh;
+}
+
+.title_members{
+    display: flex;
+    font-size: 20px;
+    font-family: 'Pacifico';
+    font-weight: bold;
+
+}
+.title_chatroom{
+    display: flex;
+    height: 3rem;
+    font-size: 20px;
+    font-family: 'Pacifico';
+    font-weight: bold;
+}
+
+
+
+.members{
+    display: flex;
+    height:70vh;
+    width:20%;
+    float: left;
+    padding: 12px;
+    box-shadow: inset -3px -3px 5px #2d384a ,inset 3px 3px 15px #000;
+}
+.chatroom{
+display: flex;
+flex-direction: column;
+float: right;
+width:77%;
+
+}
+.container{
+    height: 70vh;
+    padding:12px;
+    overflow-y: auto;
+    box-shadow: inset -3px -3px 5px #2d384a ,inset 3px 3px 15px #000;
+    
+}
+
+.member{
+    background-color: #bdc8db;
+    width:24%;
+    padding: 10px;
+    margin:17px 2px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: 'Ubuntu';
+}
+
+.message{
+    background-color: #bdc8db;
+    width:24%;
+    padding: 10px;
+    margin:17px 2px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: 'Ubuntu';
+}
+
+
+.left{
+float: left;
+clear: both;
+}
+
+.right{
+float: right;
+clear: both;
+}
+#send-container{
+    display: block;
+    max-width: 985px;
+    width: 100%;
+    background-color: #81aef7;
+   
+}
+#messageInput{
+    border-radius: 6px;
+    width:93%;
+    height: 34px;
+    background-color:#bdc8db;
+    box-shadow: 10px 10px 10px #64a3f5;
+    font-family: 'Ubuntu';
+}
+.btn{
+    cursor: pointer;
+    background-color: #bdc8db;
+    border-radius: 6px;
+    height: 40px;
+    width:3rem;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+}
