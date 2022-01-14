@@ -10,7 +10,6 @@ io.on('connection',socket=>{
     socket.on('new-user-joined',name=>{
        // console.log(name ," joined the chat");
         users[socket.id]=name;
-        socket.broadcast.emit('add-member',name);
         socket.broadcast.emit('user-joined',name);
     });
 

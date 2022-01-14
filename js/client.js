@@ -3,6 +3,7 @@ const socket=io('http://localhost:3000');
 const form=document.getElementById("send-container");
 const messageInput=document.getElementById("messageInput");
 const messageContainer=document.querySelector(".container");
+const memberContainer=document.querySelector(".members");
 const audio=new Audio('notification.mp3');
 
 
@@ -24,7 +25,7 @@ const appendMember = (name)=>{
     const memberElement=document.createElement("div");
     memberElement.innerText=name;
     memberElement.classList.add('member');
-    members.append(memberElement);
+    memberContainer.append(memberElement);
 
 }
 
@@ -39,11 +40,10 @@ form.addEventListener('submit',(e)=>{
 const user = prompt("Enter your name to join");
 socket.emit('new-user-joined',user);
 
-socket.on('add-user',name=>{
-    appendMember(name);
-})
+
 
 socket.on('user-joined',name=>{
+    appendMember(name);
     append(`${name} joined the chat`,'right');
 })
 
